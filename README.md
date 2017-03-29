@@ -1,2 +1,17 @@
-# swift-coding-challenges
-These Swift code challenges cover important concepts for any coding interview. The solutions are all in Swift 3.1. 
+# Swift Coding Challenges
+![](art/swift.png?raw=true)
+
+These Swift code challenges cover important concepts for any coding interview. The solutions are all in Swift 3.1.
+
+## Strings
+
+| No. | Challenge
+| ------------- | -------------
+| 1. | [Are the letters unique?](challenges/01_unique.swift)
+| 2. | Is the string a palindrome?
+
+### Licensing
+My Swift Coding Challenges Solutions are licensed under [the MIT License](LICENSE).
+
+### Support or Contact
+Visit [ddApps.co](http://ddapps.co) to see more.
