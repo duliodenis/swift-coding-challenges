@@ -5,9 +5,11 @@
 //  Returns true iff other is non-empty and contained within self by
 //  case-sensitive, non-literal search.
 
+import Foundation
+
 extension String {
-  func doesContain(_ find: String) ->  Bool {
-    return true
+  func doesContain(_ substring: String) ->  Bool {
+    return self.lowercased().range(of: substring.lowercased()) != nil
   }
 }
 
