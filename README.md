@@ -1,7 +1,7 @@
 # Swift Coding Challenges
 ![](art/swift.png?raw=true)
 
-These Swift code challenges cover important concepts for any coding interview. The solutions are all in Swift 3.1.
+These Swift code challenges cover important concepts for any coding interview. The solutions are all in Swift 3.
 
 ## Strings
 
@@ -11,6 +11,7 @@ These Swift code challenges cover important concepts for any coding interview. T
 | 2. | [Is the string a palindrome?](challenges/02_palindrome.swift)
 | 3. | [Do two strings contain the same characters?](challenges/03_sameCharacters.swift)
 | 4. | [Does one String contain another String?](challenges/04_contains.swift)
+| 5. | [How many times does a character appear in a string?](challenges/05_charCount.swift)
 
 ### Licensing
 My Swift Coding Challenges Solutions are licensed under [the MIT License](LICENSE).
