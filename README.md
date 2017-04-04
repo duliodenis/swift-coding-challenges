@@ -13,6 +13,7 @@ These Swift code challenges cover important concepts for any coding interview. T
 | 4. | [Does one String contain another String?](challenges/04_contains.swift)
 | 5. | [How many times does a character appear in a string?](challenges/05_charCount.swift)
 | 6. | [Remove duplicate letters from a string.](challenges/06_removeDuplicates.swift)
+| 7. | [Condensed white space.](challenges/07_condensedWhiteSpace.swift)
 
 ### Licensing
 My Swift Coding Challenges Solutions are licensed under [the MIT License](LICENSE).
