@@ -14,6 +14,7 @@ These Swift code challenges cover important concepts for any coding interview. T
 | 5. | [How many times does a character appear in a string?](challenges/05_charCount.swift)
 | 6. | [Remove duplicate letters from a string.](challenges/06_removeDuplicates.swift)
 | 7. | [Condensed white space.](challenges/07_condensedWhiteSpace.swift)
+| 8. | [Is the string rotated?](challenges/08_isRotate.swift)
 
 ### Licensing
 My Swift Coding Challenges Solutions are licensed under [the MIT License](LICENSE).
