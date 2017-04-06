@@ -15,6 +15,7 @@ These Swift code challenges cover important concepts for any coding interview. T
 | 6. | [Remove duplicate letters from a string.](challenges/06_removeDuplicates.swift)
 | 7. | [Condensed white space.](challenges/07_condensedWhiteSpace.swift)
 | 8. | [Is the string rotated?](challenges/08_isRotate.swift)
+| 9. | [Is the string a pangram?](challenges/09_isPangram.swift)
 
 ### Licensing
 My Swift Coding Challenges Solutions are licensed under [the MIT License](LICENSE).
