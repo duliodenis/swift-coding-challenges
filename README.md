@@ -17,6 +17,7 @@ These Swift code challenges cover important concepts for any coding interview. T
 | 8. | [Is the string rotated?](challenges/08_isRotate.swift)
 | 9. | [Is the string a pangram?](challenges/09_isPangram.swift)
 | 10. | [Return a tuple of a string's vowels and consonants.](challenges/10_vowelsConsonants.swift)
+| 11. | [Are two strings identical with no more than a three letter difference?](challenges/11_threeLetterDiff.swift)
 
 ### Licensing
 My Swift Coding Challenges Solutions are licensed under [the MIT License](LICENSE).
