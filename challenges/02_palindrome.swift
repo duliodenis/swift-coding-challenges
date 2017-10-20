@@ -30,3 +30,21 @@ print(isPalindrome2("palindrome"))  // false
 print(isPalindromeCaseInsensitive("rotator"))     // true
 print(isPalindromeCaseInsensitive("roTator"))     // true - case sensitive
 print(isPalindromeCaseInsensitive("palindrome"))  // false
+
+// Swift 4
+func isPalindrome3(_ word: String) -> Bool {
+    return word == String(word.reversed())
+}
+
+func isPalindromeCaseInsensitive2(_ word:String) -> Bool {
+    return word.lowercased() == String(word.reversed()).lowercased()
+}
+
+
+print(isPalindrome3("rotator"))     // true
+print(isPalindrome3("roTator"))     // false - not case sensitive
+print(isPalindrome3("palindrome"))  // false
+
+print(isPalindromeCaseInsensitive2("rotator"))     // true
+print(isPalindromeCaseInsensitive2("roTator"))     // true - case sensitive
+print(isPalindromeCaseInsensitive2("palindrome"))  // false

@@ -57,3 +57,15 @@ print(isRotateDoubler("Swift", "ftSwi")) // true
 print(isRotateDoubler("tca", "cat"))     // true
 print(isRotateDoubler("atc", "cat"))     // true
 print(isRotateDoubler("dog", "catty"))   // false
+
+//Swift 4
+func isRotateDoubler2(_ strOne: String, _ strTwo: String) -> Bool {
+    guard strOne.count == strTwo.count else { return false }
+    return (strTwo+strTwo).contains(strOne)
+}
+
+print("-------------------")
+print(isRotateDoubler2("Swift", "ftSwi")) // true
+print(isRotateDoubler2("tca", "cat"))     // true
+print(isRotateDoubler2("atc", "cat"))     // true
+print(isRotateDoubler2("dog", "catty"))   // false

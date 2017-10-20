@@ -23,3 +23,19 @@ func vowelConsonants(_ input: String) -> (vowels: Int, consonants: Int) {
 print("---------------")
 print(vowelConsonants("hello, world")) // (3, 7)
 print(vowelConsonants("Mississippi"))  // (4, 7)
+
+
+//Swift 4
+func vowelConsonants2(_ str: String) -> (vowels: Int, consonants: Int) {
+    var numOfVow = 0
+    var numOfCon = 0
+    str.lowercased().forEach {
+        if  "bcdfghjklmnpqrstvwxyz".contains($0) { numOfCon += 1 }
+        else if "aeiou".contains($0) { numOfVow += 1 }
+    }
+    return (numOfVow, numOfCon)
+}
+
+print("---------------")
+print(vowelConsonants2("hello, world")) // (3, 7)
+print(vowelConsonants2("Mississippi"))  // (4, 7)

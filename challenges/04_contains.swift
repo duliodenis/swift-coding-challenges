@@ -11,7 +11,16 @@ extension String {
   func doesContain(_ substring: String) ->  Bool {
     return self.lowercased().range(of: substring.lowercased()) != nil
   }
+
+//Swift 4
+    func doesContain2(_ substring: String) ->  Bool {
+        return lowercased().contains(substring.lowercased())
+    }
 }
 
 print("hello".doesContain("world")) // false
 print("hello".doesContain("hello")) // true
+
+
+print("hello".doesContain2("world")) // false
+print("hello".doesContain2("hello")) // true

@@ -16,3 +16,16 @@ func isPangram(_ input: String) -> Bool {
 print("---------------")
 print(isPangram("The quick brown fox jumps over the lazy dog."))  // true
 print(isPangram("The quick brown fox jumped over the lazy dog.")) // false - missing s
+
+//Swift 4
+func isPangram2(_ string: String) -> Bool {
+    var isPan = true
+    "abcdefghijklmnopqrstuvwxyz".forEach({
+        if !string.lowercased().contains($0) { isPan = false }
+    })
+    return isPan
+}
+
+print("---------------")
+print(isPangram2("The quick brown fox jumps over the lazy dog."))  // true
+print(isPangram2("The quick brown fox jumped over the lazy dog.")) // false - missing s

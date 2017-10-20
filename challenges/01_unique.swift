@@ -23,3 +23,12 @@ print(isUnique("Hello, world!"))  // false
 
 print(isUnique2("AaBbCc"))         // true
 print(isUnique2("Hello, world!"))  // false
+
+// Swift 4
+func isUnique3(_ input: String) -> Bool {
+    return Set(input).count == input.count
+}
+
+
+print(isUnique3("AaBbCc"))         // true
+print(isUnique3("Hello, world!"))  // false

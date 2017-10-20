@@ -59,3 +59,15 @@ func removeDuplicatesFrom3(_ input: String) -> String {
 print(removeDuplicatesFrom3("hello")) // helo
 print(removeDuplicatesFrom3("helo"))  // helo
 print(removeDuplicatesFrom3("Helllo,, worrld!!"))  // Helo, wrd!
+
+
+// Swift 4
+func removeDuplicatesFrom4(_ str: String) -> String {
+    var usedChar = String()
+    str.forEach { if !usedChar.contains($0) { usedChar.append($0) }}
+    return usedChar
+}
+
+print(removeDuplicatesFrom4("hello")) // helo
+print(removeDuplicatesFrom4("helo"))  // helo
+print(removeDuplicatesFrom4("Helllo,, worrld!!"))  // Helo, wrd!
