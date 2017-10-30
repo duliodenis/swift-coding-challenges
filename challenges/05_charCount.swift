@@ -30,6 +30,19 @@ func charCountWithRemoval(_ input: String, char check: String) -> Int {
     return input.characters.count - newInput.characters.count
 }
 
+//Swift 4
+func charCount2(_ input: String, char check: Character) -> Int {
+    var count = 0
+    input.forEach { if $0 == check { count += 1 }}
+    return count
+}
+
+func charCountNoFor2(_ input: String, char check: Character) -> Int {
+    return input.reduce(0) {
+        $1 == check ? $0 + 1 : $0
+    }
+}
+
 // Test Cases
 
 charCount("hello", char: "h") // 1
@@ -46,3 +59,13 @@ charCountWithRemoval("hello", char: "h") // 1
 charCountWithRemoval("hello", char: "l") // 1
 charCountWithRemoval("hello", char: "q") // 1
 charCountWithRemoval("hello", char: "H") // 1
+
+charCount2("hello", char: "h") // 1
+charCount2("hello", char: "l") // 2
+charCount2("hello", char: "q") // 0
+charCount2("hello", char: "H") // 0
+
+charCountNoFor2("hello", char: "h") // 1
+charCountNoFor2("hello", char: "l") // 2
+charCountNoFor2("hello", char: "q") // 0
+charCountNoFor2("hello", char: "H") // 0

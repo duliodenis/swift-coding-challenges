@@ -57,3 +57,12 @@ print(isSameCharacters2("hello", "hello")) // true
 
 print(isSameCharactersSorted("hello", "world")) // false
 print(isSameCharactersSorted("hello", "hello")) // true
+
+// Swift 4
+func isSameCharactersSorted2(_ one: String, _ two: String) -> Bool {
+    return one.sorted() == two.sorted()
+}
+
+
+print(isSameCharactersSorted2("hello", "world")) // false
+print(isSameCharactersSorted2("hello", "hello")) // true

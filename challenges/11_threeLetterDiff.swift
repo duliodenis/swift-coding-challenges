@@ -21,3 +21,16 @@ print(threeLetterDiff("One", "Three"))      // false - different length
 print(threeLetterDiff("String", "Threes"))  // false - 4 letter difference
 print(threeLetterDiff("Hello", "World"))    // true - 3 letter difference
 print(threeLetterDiff("Clamp", "Cramp"))    // true  - 1 letter difference
+
+//Swift 4
+func threeLetterDiff2(_ strOne: String, _ strTwo: String) -> Bool {
+    guard strOne.count == strTwo.count else { return false }
+    let setOne = Set(strOne)
+    return setOne.subtracting(strTwo).count <= 3
+}
+
+print("---------------")
+print(threeLetterDiff2("One", "Three"))      // false - different length
+print(threeLetterDiff2("String", "Threes"))  // false - 4 letter difference
+print(threeLetterDiff2("Hello", "World"))    // true - 3 letter difference
+print(threeLetterDiff2("Clamp", "Cramp"))    // true  - 1 letter difference
