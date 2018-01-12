@@ -1,7 +1,7 @@
 # Swift Coding Challenges
 ![](art/swift.png?raw=true)
 
-These Swift code challenges cover important concepts for any coding interview. The solutions are all in Swift 3.
+These Swift code challenges cover important concepts for any coding interview. The solutions are all in Swift 3 and Swift 4.
 
 ## Strings
 
